@@ -5000,11 +5000,11 @@
   "project": {
     "version": "1.0.0",
     "restore": {
-      "projectUniqueName": "C:\\project\\OnlineFoodOrder\\DataAccessLayer\\DataAccessLayer.csproj",
+      "projectUniqueName": "C:\\Users\\SUDIPTA\\OnlineFoodOrder\\DataAccessLayer\\DataAccessLayer.csproj",
       "projectName": "DataAccessLayer",
-      "projectPath": "C:\\project\\OnlineFoodOrder\\DataAccessLayer\\DataAccessLayer.csproj",
+      "projectPath": "C:\\Users\\SUDIPTA\\OnlineFoodOrder\\DataAccessLayer\\DataAccessLayer.csproj",
       "packagesPath": "C:\\Users\\SUDIPTA\\.nuget\\packages\\",
-      "outputPath": "C:\\project\\OnlineFoodOrder\\DataAccessLayer\\obj\\",
+      "outputPath": "C:\\Users\\SUDIPTA\\OnlineFoodOrder\\DataAccessLayer\\obj\\",
       "projectStyle": "PackageReference",
       "configFilePaths": [
         "C:\\Users\\SUDIPTA\\AppData\\Roaming\\NuGet\\NuGet.Config",

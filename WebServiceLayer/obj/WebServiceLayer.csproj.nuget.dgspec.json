@@ -1,17 +1,17 @@
 {
   "format": 1,
   "restore": {
-    "C:\\project\\OnlineFoodOrder\\WebServiceLayer\\WebServiceLayer.csproj": {}
+    "C:\\Users\\SUDIPTA\\OnlineFoodOrder\\WebServiceLayer\\WebServiceLayer.csproj": {}
   },
   "projects": {
-    "C:\\project\\OnlineFoodOrder\\DataAccessLayer\\DataAccessLayer.csproj": {
+    "C:\\Users\\SUDIPTA\\OnlineFoodOrder\\DataAccessLayer\\DataAccessLayer.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "C:\\project\\OnlineFoodOrder\\DataAccessLayer\\DataAccessLayer.csproj",
+        "projectUniqueName": "C:\\Users\\SUDIPTA\\OnlineFoodOrder\\DataAccessLayer\\DataAccessLayer.csproj",
         "projectName": "DataAccessLayer",
-        "projectPath": "C:\\project\\OnlineFoodOrder\\DataAccessLayer\\DataAccessLayer.csproj",
+        "projectPath": "C:\\Users\\SUDIPTA\\OnlineFoodOrder\\DataAccessLayer\\DataAccessLayer.csproj",
         "packagesPath": "C:\\Users\\SUDIPTA\\.nuget\\packages\\",
-        "outputPath": "C:\\project\\OnlineFoodOrder\\DataAccessLayer\\obj\\",
+        "outputPath": "C:\\Users\\SUDIPTA\\OnlineFoodOrder\\DataAccessLayer\\obj\\",
         "projectStyle": "PackageReference",
         "configFilePaths": [
           "C:\\Users\\SUDIPTA\\AppData\\Roaming\\NuGet\\NuGet.Config",
@@ -70,14 +70,14 @@
         }
       }
     },
-    "C:\\project\\OnlineFoodOrder\\WebServiceLayer\\WebServiceLayer.csproj": {
+    "C:\\Users\\SUDIPTA\\OnlineFoodOrder\\WebServiceLayer\\WebServiceLayer.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "C:\\project\\OnlineFoodOrder\\WebServiceLayer\\WebServiceLayer.csproj",
+        "projectUniqueName": "C:\\Users\\SUDIPTA\\OnlineFoodOrder\\WebServiceLayer\\WebServiceLayer.csproj",
         "projectName": "WebServiceLayer",
-        "projectPath": "C:\\project\\OnlineFoodOrder\\WebServiceLayer\\WebServiceLayer.csproj",
+        "projectPath": "C:\\Users\\SUDIPTA\\OnlineFoodOrder\\WebServiceLayer\\WebServiceLayer.csproj",
         "packagesPath": "C:\\Users\\SUDIPTA\\.nuget\\packages\\",
-        "outputPath": "C:\\project\\OnlineFoodOrder\\WebServiceLayer\\obj\\",
+        "outputPath": "C:\\Users\\SUDIPTA\\OnlineFoodOrder\\WebServiceLayer\\obj\\",
         "projectStyle": "PackageReference",
         "configFilePaths": [
           "C:\\Users\\SUDIPTA\\AppData\\Roaming\\NuGet\\NuGet.Config",
@@ -94,8 +94,8 @@
           "netcoreapp3.1": {
             "targetAlias": "netcoreapp3.1",
             "projectReferences": {
-              "C:\\project\\OnlineFoodOrder\\DataAccessLayer\\DataAccessLayer.csproj": {
-                "projectPath": "C:\\project\\OnlineFoodOrder\\DataAccessLayer\\DataAccessLayer.csproj"
+              "C:\\Users\\SUDIPTA\\OnlineFoodOrder\\DataAccessLayer\\DataAccessLayer.csproj": {
+                "projectPath": "C:\\Users\\SUDIPTA\\OnlineFoodOrder\\DataAccessLayer\\DataAccessLayer.csproj"
               }
             }
           }

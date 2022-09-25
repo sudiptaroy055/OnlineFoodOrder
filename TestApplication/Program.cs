@@ -11,7 +11,8 @@ namespace TestApplication
         {
             Console.WriteLine("Hello World!");
             //GetAllItems();
-            GetAllItemByCategoryName();
+            //GetAllItemByCategoryName();
+            //GetItemPrice
         }
         public static void GetAllItems()
         {
