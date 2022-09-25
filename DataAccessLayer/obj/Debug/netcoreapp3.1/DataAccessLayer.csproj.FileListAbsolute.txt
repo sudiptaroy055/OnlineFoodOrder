@@ -11,3 +11,16 @@ D:\OnlineFoodOrder\DataAccessLayer\obj\Debug\netcoreapp3.1\DataAccessLayer.cspro
 D:\OnlineFoodOrder\DataAccessLayer\obj\Debug\netcoreapp3.1\DataAccessLayer.dll
 D:\OnlineFoodOrder\DataAccessLayer\obj\Debug\netcoreapp3.1\DataAccessLayer.pdb
 D:\OnlineFoodOrder\DataAccessLayer\obj\Debug\netcoreapp3.1\DataAccessLayer.genruntimeconfig.cache
+C:\project\OnlineFoodOrder\DataAccessLayer\obj\Debug\netcoreapp3.1\DataAccessLayer.csproj.AssemblyReference.cache
+C:\project\OnlineFoodOrder\DataAccessLayer\obj\Debug\netcoreapp3.1\DataAccessLayer.GeneratedMSBuildEditorConfig.editorconfig
+C:\project\OnlineFoodOrder\DataAccessLayer\obj\Debug\netcoreapp3.1\DataAccessLayer.AssemblyInfoInputs.cache
+C:\project\OnlineFoodOrder\DataAccessLayer\obj\Debug\netcoreapp3.1\DataAccessLayer.AssemblyInfo.cs
+C:\project\OnlineFoodOrder\DataAccessLayer\obj\Debug\netcoreapp3.1\DataAccessLayer.csproj.CoreCompileInputs.cache
+C:\project\OnlineFoodOrder\DataAccessLayer\obj\Debug\netcoreapp3.1\DataAccessLayer.dll
+C:\project\OnlineFoodOrder\DataAccessLayer\obj\Debug\netcoreapp3.1\DataAccessLayer.pdb
+C:\project\OnlineFoodOrder\DataAccessLayer\bin\Debug\netcoreapp3.1\DataAccessLayer.deps.json
+C:\project\OnlineFoodOrder\DataAccessLayer\bin\Debug\netcoreapp3.1\DataAccessLayer.runtimeconfig.json
+C:\project\OnlineFoodOrder\DataAccessLayer\bin\Debug\netcoreapp3.1\DataAccessLayer.runtimeconfig.dev.json
+C:\project\OnlineFoodOrder\DataAccessLayer\bin\Debug\netcoreapp3.1\DataAccessLayer.dll
+C:\project\OnlineFoodOrder\DataAccessLayer\bin\Debug\netcoreapp3.1\DataAccessLayer.pdb
+C:\project\OnlineFoodOrder\DataAccessLayer\obj\Debug\netcoreapp3.1\DataAccessLayer.genruntimeconfig.cache

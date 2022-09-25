@@ -136,9 +136,9 @@ namespace DataAccessLayer.Models
             OnModelCreatingPartial(modelBuilder);
         }
 
-        internal static object GetItemPrice(string itemId)
+        internal static decimal GetItemPrice(string itemId)
         {
-            throw new NotImplementedException();
+            return 0;
         }
 
         partial void OnModelCreatingPartial(ModelBuilder modelBuilder);

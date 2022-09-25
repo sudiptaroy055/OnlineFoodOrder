@@ -4948,11 +4948,11 @@
   "project": {
     "version": "1.0.0",
     "restore": {
-      "projectUniqueName": "C:\\OnlineFoodOrder\\TestApplication\\TestApplication.csproj",
+      "projectUniqueName": "C:\\project\\OnlineFoodOrder\\TestApplication\\TestApplication.csproj",
       "projectName": "TestApplication",
-      "projectPath": "C:\\OnlineFoodOrder\\TestApplication\\TestApplication.csproj",
+      "projectPath": "C:\\project\\OnlineFoodOrder\\TestApplication\\TestApplication.csproj",
       "packagesPath": "C:\\Users\\SUDIPTA\\.nuget\\packages\\",
-      "outputPath": "C:\\OnlineFoodOrder\\TestApplication\\obj\\",
+      "outputPath": "C:\\project\\OnlineFoodOrder\\TestApplication\\obj\\",
       "projectStyle": "PackageReference",
       "configFilePaths": [
         "C:\\Users\\SUDIPTA\\AppData\\Roaming\\NuGet\\NuGet.Config",
@@ -4969,8 +4969,8 @@
         "netcoreapp3.1": {
           "targetAlias": "netcoreapp3.1",
           "projectReferences": {
-            "C:\\OnlineFoodOrder\\DataAccessLayer\\DataAccessLayer.csproj": {
-              "projectPath": "C:\\OnlineFoodOrder\\DataAccessLayer\\DataAccessLayer.csproj"
+            "C:\\project\\OnlineFoodOrder\\DataAccessLayer\\DataAccessLayer.csproj": {
+              "projectPath": "C:\\project\\OnlineFoodOrder\\DataAccessLayer\\DataAccessLayer.csproj"
             }
           }
         }
