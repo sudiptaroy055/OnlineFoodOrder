@@ -19,6 +19,7 @@ namespace WebServiceLayer.Controllers
             repository = new CustomerRepository();
         }
         #region GetAllItem
+        [HttpGet]
         public JsonResult GetAllItems()
         {
             List<Items> itemList = null;
@@ -36,7 +37,7 @@ namespace WebServiceLayer.Controllers
         #endregion
 
         #region GetAllItemByCategoryName
-
+        [HttpGet]
         public JsonResult GetAllItemByCategoryName(string categoryName)
         {
             List<ItemDetails> listIems = null;
@@ -51,6 +52,25 @@ namespace WebServiceLayer.Controllers
             }
             return Json(listIems);
             
+        }
+        #endregion
+
+        #region GetItemPrice
+        [HttpGet]
+        public JsonResult GetItemPrice(string itemId)
+        {
+
+            decimal result;
+            try
+            {
+                result = repository.GetItemPrice(itemId);
+            }
+            catch (Exception)
+            {
+
+                result = 0;
+            }
+            return Json(result);
         }
         #endregion
     }
