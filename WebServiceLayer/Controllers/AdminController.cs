@@ -18,9 +18,10 @@ namespace WebServiceLayer.Controllers
         {
             repository = new AdminRepository();
         }
+
         #region AddItem
         [HttpPost]
-        public JsonResult AddItem(Models.Items items)
+        public JsonResult AddItem(Models.Item item)
         {
             bool status = false;
             string message = null;
@@ -28,10 +29,10 @@ namespace WebServiceLayer.Controllers
             try
             {
                 Items itemObj = new Items();
-                itemObj.ItemId = items.ItemId;
-                itemObj.ItemName = items.ItemName;
-                itemObj.Price = items.Price;
-                itemObj.CategoryId = items.CategoryId;
+                itemObj.ItemId = item.ItemId;
+                itemObj.ItemName = item.ItemName;
+                itemObj.Price = item.Price;
+                itemObj.CategoryId = item.CategoryId;
 
                 status = repository.AddItem(itemObj.ItemId, itemObj.ItemName, itemObj.Price, itemObj.CategoryId);
                 if (status)
@@ -52,20 +53,19 @@ namespace WebServiceLayer.Controllers
         #endregion
 
         #region GetAllCategoryOrderDetails
-        //public JsonResult GetAllCategoryOrderDetails(int categoryId)
-        //{
-        //    List<CategoryItemDetails> itemDetails = new List<CategoryItemDetails>();
-        //    try
-        //    {
-        //       itemDetails = repository.GetAllCategoryOrderDetails(categoryId).ToList();
-        //    }
-        //    catch (Exception)
-        //    {
-
-        //        itemDetails = null;
-        //    }
-        //    return Json(itemDetails);
-        //}
+        public JsonResult GetAllCategoryOrderDetails(int categoryId)
+        {
+            List<CategoryItemDetails> itemDetails = new List<CategoryItemDetails>();
+            try
+            {
+                itemDetails = repository.GetAllCategoryOrderDetails(categoryId).ToList();
+            }
+            catch (Exception)
+            {
+                itemDetails = null;
+            }
+            return Json(itemDetails);
+        }
         #endregion
     }
 }

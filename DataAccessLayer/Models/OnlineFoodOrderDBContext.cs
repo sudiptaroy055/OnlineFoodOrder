@@ -19,8 +19,9 @@ namespace DataAccessLayer.Models
         public virtual DbSet<Customers> Customers { get; set; }
         public virtual DbSet<Items> Items { get; set; }
         public virtual DbSet<Orders> Orders { get; set; }
-        //public virtual DbSet<CategoryItemDetails> CategoryItemDetails { get; set; }
+        public virtual DbSet<CategoryItemDetails> CategoryItemDetails { get; set; }
         public virtual DbSet<ItemDetails> ItemDetails { get; set; }
+
 
         protected override void OnConfiguring(DbContextOptionsBuilder optionsBuilder)
         {
@@ -138,7 +139,6 @@ namespace DataAccessLayer.Models
 
         internal static decimal GetItemPrice(string itemId)
         {
-
             return 0;
         }
 

@@ -13,7 +13,11 @@ namespace TestApplication
             //GetAllItems();
             //GetAllItemByCategoryName();
             //GetItemPrice();
+            //AddItem();
+            GetAllCategoryOrderDetails();
         }
+        #region Customer
+
         #region GetAllItems
         public static void GetAllItems()
         {
@@ -54,7 +58,11 @@ namespace TestApplication
                     Console.WriteLine("{0, -10}{1, -20}{2}", item.ItemId, item.ItemName, item.Price);
                 }
                 Console.WriteLine("--------------------------------------------------");
-            }                                      
+            }
+            else
+            {
+                Console.WriteLine("Something went wrong, Check Category Name");
+            }
         }
         #endregion
 
@@ -74,6 +82,61 @@ namespace TestApplication
                 Console.WriteLine("price: " + result);
             }
         }
+        #endregion
+
+        #endregion
+
+        #region Admin
+
+        #region AddItem
+        public static void AddItem()
+        {
+            AdminRepository repository = new AdminRepository();
+            bool result;
+            result = repository.AddItem("SBR", "Special Chicken Biryani", 120, 1);
+            if (result)
+            {
+                Console.WriteLine("-----------------------------------");
+                Console.WriteLine("    New item addd successfull    ");
+                Console.WriteLine("-----------------------------------");
+            }
+            else
+            {
+                Console.WriteLine("-------------------------------------");
+                Console.WriteLine("   Somehing went wrong try again   ");
+                Console.WriteLine("-------------------------------------");
+            }
+        }
+        #endregion
+
+        #region GetAllCategoryOrderDetails
+        public static void GetAllCategoryOrderDetails()
+        {
+            AdminRepository repository = new AdminRepository();
+            int CategoryId = 1;
+            List<CategoryItemDetails> categoryItemDetails = null;
+            categoryItemDetails = repository.GetAllCategoryOrderDetails(CategoryId);
+            if (categoryItemDetails != null)
+            {
+                Console.WriteLine("------------------------------------------------------------------------------------------------------------------------------------");
+                Console.WriteLine("{0, -12}{1, -12}{2, -20}{3, -20}{4, -30}{5, -25}{6}", "OrderId",
+                "CustomerId", "CustomerName", "ItemName","DeliveryAddress", "OrderDate", "DeliveryStatus");
+                foreach (var item in categoryItemDetails) 
+                {
+                    Console.WriteLine("{0, -12}{1, -12}{2, -20}{3, -20}{4, -30}{5, -25}{6}",item.OrderId, item.CustomerId, item.CustomerName,
+                        item.ItemName, item.DeliveryAddress, item.OrderDate, item.DeliveryStatus);
+                }
+                Console.WriteLine("-------------------------------------------------------------------------------------------------------------------------------------");
+            }
+            else
+            {
+                Console.WriteLine("--------------------------------------");
+                Console.WriteLine("No order available for this category");
+                Console.WriteLine("--------------------------------------");
+            }
+        }
+        #endregion
+
         #endregion
     }
 }

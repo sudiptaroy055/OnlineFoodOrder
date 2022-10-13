@@ -41,20 +41,20 @@ namespace DataAccessLayer
         #endregion
 
         #region GetAllCategoryOrderDetails
-        //public List<CategoryItemDetails> GetAllCategoryOrderDetails(int categoryId)
-        //{
-        //    List<CategoryItemDetails> lstProduct = null;
-        //    try
-        //    {
-        //        SqlParameter prmCategoryId = new SqlParameter("@CategoryId", categoryId);
-        //        lstProduct = context.CategoryItemDetails.FromSqlRaw("SELECT * FROM ufn_GetAllOrderDetails(@CategoryId)", categoryId).ToList();
-        //    }
-        //    catch (Exception)
-        //    {
-        //        lstProduct = null;
-        //    }
-        //    return lstProduct;
-        //}
+        public List<CategoryItemDetails> GetAllCategoryOrderDetails(int categoryId)
+        {
+            List<CategoryItemDetails> lstProduct = null;
+            try
+            {
+                SqlParameter prmCategoryId = new SqlParameter("@CategoryId", categoryId);
+                lstProduct = context.CategoryItemDetails.FromSqlRaw("SELECT * FROM ufn_GetAllOrderDetails(@CategoryId)", prmCategoryId).ToList();
+            }
+            catch (Exception)
+            {
+                lstProduct = null;
+            }
+            return lstProduct;
+        }
         #endregion
     }
 }
