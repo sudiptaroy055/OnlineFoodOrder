@@ -17,7 +17,7 @@ namespace TestApplication
             //GetAllCategoryOrderDetails();
             //UpdatePrice();
             //CheckDeliveryStatus();
-            
+            //DeleteOrderDetails
         }
 
         #region Customer
@@ -186,6 +186,23 @@ namespace TestApplication
         }
         #endregion
 
+        #region DeleteOrderDetails
+        public static void DeleteOrderDetails()
+        {
+            CommonRepository repository = new CommonRepository();
+            bool status;
+            int OrderId = 4;
+            status = repository.DeleteOrderDetails(OrderId);
+            if (status)
+            {
+                Console.WriteLine("Order cancled !");
+            }
+            else
+            {
+                Console.WriteLine("Try again !");
+            }
+        }
+        #endregion
 
         #endregion
     }

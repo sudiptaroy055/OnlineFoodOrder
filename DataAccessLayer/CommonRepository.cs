@@ -31,5 +31,35 @@ namespace DataAccessLayer
             return status;
         }
         #endregion
+
+        #region DeleteOrderDetails
+        public bool DeleteOrderDetails(int OrderId)
+        {
+            Orders orders = null;
+            bool status;
+
+            try
+            {
+                orders = context.Orders.Find(OrderId);
+                if (orders != null)
+                {
+                    context.Orders.Remove(orders);
+                    context.SaveChanges();
+                    status = true;
+                }
+                else
+                {
+                    status = false;
+                }
+            }
+            catch (Exception)
+            {
+
+                status = false;
+            }
+            return status;
+        }
+        #endregion
+
     }
 }

@@ -48,6 +48,32 @@ namespace WebServiceLayer.Controllers
             return Json(message);
         }
         #endregion
-       
+
+        #region DeleteOrderDetails
+        public JsonResult DeleteOrderDetails(int OrderId)
+        {
+            bool status;
+            string message;
+            status = repository.DeleteOrderDetails(OrderId);
+            try
+            {
+                if (status)
+                {
+                    message = "Order cancled !";
+                }
+                else
+                {
+                    message = "Try again";
+                }
+            }
+            catch (Exception)
+            {
+
+                message = "An error occured";
+            }
+            return Json(message);
+        }
+        #endregion
+
     }
 }
