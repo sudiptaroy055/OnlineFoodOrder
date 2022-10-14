@@ -18,6 +18,9 @@ namespace DataAccessLayer.Models
         public virtual DbSet<Category> Category { get; set; }
         public virtual DbSet<Customers> Customers { get; set; }
         public virtual DbSet<Items> Items { get; set; }
+
+        
+
         public virtual DbSet<Orders> Orders { get; set; }
         public virtual DbSet<CategoryItemDetails> CategoryItemDetails { get; set; }
         public virtual DbSet<ItemDetails> ItemDetails { get; set; }
@@ -137,7 +140,14 @@ namespace DataAccessLayer.Models
             OnModelCreatingPartial(modelBuilder);
         }
 
+        [DbFunction("ufn_FetchItemPrice", "dbo")]
         internal static decimal GetItemPrice(string itemId)
+        {
+            return 0;
+        }
+
+        [DbFunction("ufn_CheckDeliveryStatus", "dbo")]
+        internal static int CheckDeliveryStatus(int orderId)
         {
             return 0;
         }

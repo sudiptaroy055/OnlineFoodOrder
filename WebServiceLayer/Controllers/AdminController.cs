@@ -46,6 +46,7 @@ namespace WebServiceLayer.Controllers
             }
             catch (Exception)
             {
+                status = false;
                 message = "Some error occured, please try again";
             }
             return Json(message);
@@ -53,6 +54,7 @@ namespace WebServiceLayer.Controllers
         #endregion
 
         #region GetAllCategoryOrderDetails
+        [HttpGet]
         public JsonResult GetAllCategoryOrderDetails(int categoryId)
         {
             List<CategoryItemDetails> itemDetails = new List<CategoryItemDetails>();
@@ -69,6 +71,7 @@ namespace WebServiceLayer.Controllers
         #endregion
 
         #region UpdatePrice 
+        [HttpPut]
         public JsonResult UpdatePrice(string ItemId, decimal ItemPrice)
         {
             bool status;

@@ -16,6 +16,8 @@ namespace TestApplication
             //AddItem();
             //GetAllCategoryOrderDetails();
             //UpdatePrice();
+            //CheckDeliveryStatus();
+            
         }
 
         #region Customer
@@ -95,7 +97,7 @@ namespace TestApplication
         {
             AdminRepository repository = new AdminRepository();
             bool result;
-            result = repository.AddItem("SBR", "Special Chicken Biryani", 120, 1);
+            result = repository.AddItem("MBR", "Mutton Biryani", 120, 2);
             if (result)
             {
                 Console.WriteLine("-----------------------------------");
@@ -157,6 +159,33 @@ namespace TestApplication
             }
         }
         #endregion
+
+        #endregion
+
+        #region Common
+
+        #region CheckDeliveryStatus
+        public static void CheckDeliveryStatus()
+        {
+            CommonRepository repository = new CommonRepository();
+            int OrderId = 1;
+            int status;
+            status = repository.CheckDeliveryStatus(OrderId);
+            if (status == 1)
+            {
+                Console.WriteLine("Order not Delivered");
+            }
+            else if (status == 0)
+            {
+                Console.WriteLine("Order Delivered");
+            }
+            else
+            {
+                Console.WriteLine("Order dose not exist");
+            }
+        }
+        #endregion
+
 
         #endregion
     }
