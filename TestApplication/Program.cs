@@ -14,8 +14,10 @@ namespace TestApplication
             //GetAllItemByCategoryName();
             //GetItemPrice();
             //AddItem();
-            GetAllCategoryOrderDetails();
+            //GetAllCategoryOrderDetails();
+            //UpdatePrice();
         }
+
         #region Customer
 
         #region GetAllItems
@@ -133,6 +135,25 @@ namespace TestApplication
                 Console.WriteLine("--------------------------------------");
                 Console.WriteLine("No order available for this category");
                 Console.WriteLine("--------------------------------------");
+            }
+        }
+        #endregion
+
+        #region UpdatePrice
+        public static void UpdatePrice()
+        {
+            AdminRepository repository = new AdminRepository();
+            string itemId = "SBR";
+            decimal itemPrice = 250;
+            bool status;
+            status = repository.UpdatePrice(itemId, itemPrice);
+            if (status)
+            {
+                Console.WriteLine("Price updated successfully");
+            }
+            else
+            {
+                Console.WriteLine("Something went wrong try again!!!");
             }
         }
         #endregion

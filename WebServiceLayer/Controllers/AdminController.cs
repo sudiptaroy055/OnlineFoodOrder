@@ -67,5 +67,30 @@ namespace WebServiceLayer.Controllers
             return Json(itemDetails);
         }
         #endregion
+
+        #region UpdatePrice 
+        public JsonResult UpdatePrice(string ItemId, decimal ItemPrice)
+        {
+            bool status;
+            string message;
+            try
+            {
+                status = repository.UpdatePrice(ItemId, ItemPrice);
+                if (status)
+                {
+                    message = "Price updated successfully";
+                }
+                else
+                {
+                    message = "Unseccessful update operation try again";
+                }
+            }
+            catch (Exception)
+            {
+                message = "Something went wrong try again!!!";
+            }
+            return Json(message);
+        }
+        #endregion
     }
 }

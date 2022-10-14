@@ -40,7 +40,7 @@ namespace DataAccessLayer
         }
         #endregion
 
-        #region GetAllCategoryOrderDetails
+        #region GetAllCategoryOrderDetails        
         public List<CategoryItemDetails> GetAllCategoryOrderDetails(int categoryId)
         {
             List<CategoryItemDetails> lstProduct = null;
@@ -54,6 +54,32 @@ namespace DataAccessLayer
                 lstProduct = null;
             }
             return lstProduct;
+        }
+        #endregion
+
+        #region UpdatePrice
+        public bool UpdatePrice(string itemId, decimal itemPrice)
+        {
+            bool status;
+            try
+            {
+                Items items = context.Items.Find(itemId);
+                if (items != null)
+                {
+                    items.Price = itemPrice;
+                    context.SaveChanges();
+                    status = true;
+                }
+                else
+                {
+                    status = false;
+                }
+            }
+            catch (Exception)
+            {
+                status = false;
+            }
+            return status;
         }
         #endregion
     }
